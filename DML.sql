@@ -1,17 +1,12 @@
-INSERT INTO tb_endereco (
-    rua,
-    numero,
-    cep,
-    bairro,
-    cidade,
-    pais,
-    complemento
-) VALUES (
-    'RUA DA CONSOLACAO ',
-    4577,
-    '01308000',
-    'CONSOLACAO',
-    'SAO PAULO',
-    'BRASIL',
-    'METRO'
-);
+UPDATE tb_endereco
+SET
+    a = b
+WHERE
+        cod_endereco = :v0
+    AND rua = :v1
+    AND numero = :v2
+    AND cep = :v3
+    AND bairro = :v4
+    AND cidade = :v5
+    AND pais = :v6
+    AND complemento = :v7;
